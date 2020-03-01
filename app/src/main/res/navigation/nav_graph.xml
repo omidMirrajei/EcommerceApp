@@ -24,6 +24,6 @@
             app:destination="@id/HomeFragment" />
         <argument
             android:name="positionOfIndex"
-            app:argType="integer"/>
+            app:argType="string"/>
     </fragment>
 </navigation>

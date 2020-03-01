@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
         for (i in 0..100) {
             products.add(
                 Product(
-                    "#$i Organic Apple",
+                    "MOON Equipped Speed Shop T-Shirt $i",
                     "https://dummyimage.com/500x500/757575/eeeeee/fff.jpg&text=IMAGE",
                     1.99
                 )

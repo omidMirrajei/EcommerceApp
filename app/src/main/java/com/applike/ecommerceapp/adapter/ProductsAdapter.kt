@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.applike.ecommerceapp.R
@@ -38,7 +37,7 @@ class ProductsAdapter(private val context: Context, private val products: ArrayL
 
         holder.itemView.setOnClickListener { view: View ->
             val action =
-                HomeFragmentDirections.actionHomeFragmentToProductDetailsFragment(position)
+                HomeFragmentDirections.actionHomeFragmentToProductDetailsFragment(current.title)
             view.findNavController().navigate(action)
         }
     }

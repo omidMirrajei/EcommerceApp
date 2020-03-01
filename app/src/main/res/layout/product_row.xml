@@ -20,30 +20,30 @@
 
     <TextView
         android:id="@+id/textView_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        tools:text="All in one Computer"
         android:textColor="@color/colorPrimaryText"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView_photo"
-        app:layout_constraintTop_toTopOf="@+id/imageView_photo" />
+        app:layout_constraintTop_toTopOf="@+id/imageView_photo"
+        app:lineHeight="30dp"
+        tools:text="MOON Equipped Speed Shop T-Shirt #10" />
 
     <TextView
         android:id="@+id/textView_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        tools:text="$650.00"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_photo"
         app:layout_constraintEnd_toEndOf="@+id/textView_title"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView_title" />
+        app:layout_constraintStart_toStartOf="@+id/textView_title"
+        tools:text="$650.00" />
 </androidx.constraintlayout.widget.ConstraintLayout>
