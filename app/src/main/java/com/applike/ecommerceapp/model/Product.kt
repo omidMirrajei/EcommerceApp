@@ -1,4 +1,4 @@
-package com.applike.ecommerceapp
+package com.applike.ecommerceapp.model
 
 data class Product(
     val title: String,
